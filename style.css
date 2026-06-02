@@ -49,6 +49,7 @@ a {
 /* MOON */
 /* MOON CONTAINER */
 #moon {
+    visibility: hidden;
     position: absolute;
     top: 25vh;
     right: 5vw;
@@ -93,10 +94,11 @@ a {
 /* FACT */
 #fact {
     position: absolute;
+    font-weight: 600;
     bottom: 30vh;
-    left: 10vw;
+    left: 20vw;
     width: 30vw;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 /* COMPLIMENT */
