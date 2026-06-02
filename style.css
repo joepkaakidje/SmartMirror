@@ -20,10 +20,11 @@ p {
 /* CLOCK */
 #clock {
     position: absolute;
-    top: 5vh;
+    top: 1vh;
     right: 5vw;
     font-size: 5rem;
     font-weight: bold;
+    transform: scale(1.2);
 }
 
 /* WEATHER */
@@ -49,9 +50,10 @@ a {
 /* MOON CONTAINER */
 #moon {
     position: absolute;
-    top: 30vh;
+    top: 67vh;
     right: 5vw;
     width: 20vw;
+    transform: scale(2);
 }
 
 /* OUTER MOON CIRCLE */
@@ -62,7 +64,7 @@ a {
     background: white;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    
 }
 
 /* DARK SHADOW LAYER */
@@ -83,6 +85,7 @@ a {
     margin-top: 10px;
     font-size: 0.9rem;
     opacity: 0.8;
+    color: white;
 }
 
 
@@ -90,17 +93,19 @@ a {
 /* FACT */
 #fact {
     position: absolute;
-    bottom: 25vh;
-    left: 5vw;
+    bottom: 5vh;
+    left: 10vw;
     width: 30vw;
+    transform: scale(1.5);
 }
 
 /* COMPLIMENT */
 #compliment {
     position: absolute;
-    bottom: 5vh;
-    right: 5vw;
+    bottom: 45vh;
+    left: 10vw;
     width: 30vw;
+    transform: scale(1.5);
 }
 
 .box {
