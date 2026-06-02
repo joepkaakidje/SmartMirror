@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Mirror</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- WEATHER WIDGET -->
+    <a class="disabled-link weatherwidget-io"
+       href="https://forecast7.com/en/51d914d60/krimpen-aan-den-ijssel/"
+       data-font="Arial Black"
+       data-days="3"
+       data-textcolor="#ffffff"
+       data-highcolor="#ffffff"
+       data-lowcolor="#ffffff">
+        Krimpen aan den IJssel
+    </a>
+
+    <!-- CLOCK -->
+    <div id="clock"></div>
+
+    <!-- MOON -->
+    <div id="moon" class="box">
+        <h2>Moon Phase</h2>
+
+        <div id="moonCircle">
+            <div id="moonShadow"></div>
+        </div>
+
+        <p id="moonText"></p>
+    </div>
+
+    <!-- FACT -->
+    <div id="fact" class="box">
+        <h2>Daily Fact</h2>
+        <p id="dailyFact"></p>
+        <small id="factExplanation"></small>
+    </div>
+
+    <!-- COMPLIMENT -->
+    <div id="compliment" class="box">
+        <h2>Daily Compliment</h2>
+        <p id="dailyCompliment"></p>
+        <small id="complimentExplanation"></small>
+    </div>
+
+    <!-- WEATHER SCRIPT -->
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src='https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,'script','weatherwidget-io-js');
+    </script>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>

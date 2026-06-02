@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* HEADINGS */
+h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* CLOCK */
+#clock {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* WEATHER */
+.weatherwidget-io {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 25vw;
+    transform: scale(1.4);
+    transform-origin: top left;
+}
+
+a {
+    color: white;
+}
+
+.disabled-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* MOON */
+/* MOON CONTAINER */
+#moon {
+    position: absolute;
+    top: 30vh;
+    right: 5vw;
+    width: 20vw;
+}
+
+/* OUTER MOON CIRCLE */
+#moonCircle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* DARK SHADOW LAYER */
+#moonShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-radius: 50%;
+    transform-origin: left center;
+    transform: scaleX(1);
+}
+
+/* TEXT */
+#moonText {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+
+/* FACT */
+#fact {
+    position: absolute;
+    bottom: 25vh;
+    left: 5vw;
+    width: 30vw;
+}
+
+/* COMPLIMENT */
+#compliment {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    width: 30vw;
+}
+
+.box {
+    opacity: 0.9;
+}
