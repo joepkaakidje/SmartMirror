@@ -50,7 +50,7 @@ a {
 /* MOON CONTAINER */
 #moon {
     position: absolute;
-    top: 67vh;
+    top: 25vh;
     right: 5vw;
     width: 20vw;
     transform: scale(2);
@@ -93,7 +93,7 @@ a {
 /* FACT */
 #fact {
     position: absolute;
-    bottom: 5vh;
+    bottom: 30vh;
     left: 10vw;
     width: 30vw;
     transform: scale(1.5);
@@ -101,9 +101,10 @@ a {
 
 /* COMPLIMENT */
 #compliment {
+    visibility: hidden;
     position: absolute;
-    bottom: 45vh;
-    left: 10vw;
+    bottom: 30vh;
+    left: 60vw;
     width: 30vw;
     transform: scale(1.5);
 }
