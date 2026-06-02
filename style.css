@@ -33,7 +33,7 @@ p {
     top: 5vh;
     left: 5vw;
     width: 25vw;
-    transform: scale(1.4);
+    transform: scale(2);
     transform-origin: top left;
 }
 
